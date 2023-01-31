@@ -1,0 +1,11 @@
+import os
+
+# Folder tempat file disimpan
+folder = "path/to/file/folder"
+
+# Buka file teks untuk menulis nama file
+with open("file_list.txt", "w") as file:
+    # Loop melalui setiap file di folder
+    for filename in os.listdir(folder):
+        # Tulis nama file ke file teks
+        file.write(filename + "\n")
